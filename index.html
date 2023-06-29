@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="pageContenair">
+
+    <div class="heder" id="heder">
+        <h1 >Task <span class="list"> list</span></h1>
+        <h1 onclick="addTask()" class="h1additem"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16" >
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+          </svg>  Add Iteam</h1>
+    </div>
+    <div class="TaskContenair" >
+    <div class="Task" id="Task">
+        <h1>Add New List</h1>
+        <form action="./index.html">
+            <input type="text" id="visitedName" placeholder="add Item">
+            <br><br>
+            <div class="btnCon">
+            <div id="inputTask" onclick="addItem()"  class="addbnt"><span> Add</span></div>  <div class="delebtn"><span> Close</span></div>
+        </div>
+        </form>
+    </div>
+</div>
+
+    <div class="todoContenair" id="addItem">
+
+    </div>
+    <div class="popAddList" id="list">
+        <form action="./index.html">
+
+        </form>
+
+    </div>
+
+
+    <div id="Lastpop">
+        <div class="box" id="BOX">
+            <h1>Add New last</h1>
+            <form action="./index.html">
+                <input type="text" id="lastInpu" class="LastInput" placeholder="add Item">
+                <br><br>
+                <div class="btnCon">
+                <div id="lastadbtn"  onclick="lastFun()" >Add</div>  <button  id="closebtn"> Close</button>`
+            </div>
+            </form>
+    </div>
+
+</div>
+</body>
+<script src="./Todo.js"></script>
+</html>
